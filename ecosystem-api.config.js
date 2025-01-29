@@ -28,7 +28,7 @@ module.exports = {
         repo: "git@github.com:Tollaris95/sos-ses-api.git",
         path: "/home/sos-ses-api",
         "pre-deploy-local": "",
-        "post-deploy": "npm install && npm run build && pm2 startOrReload ecosystem-api.config.js",
+        "post-deploy": "npm install && pm2 startOrReload ecosystem-api.config.js",
         "pre-setup": "",
       },
     },
