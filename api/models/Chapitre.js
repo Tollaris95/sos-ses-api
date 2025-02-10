@@ -5,10 +5,6 @@ module.exports = {
         required: true,
         unique: true,
       },
-      questions: {
-        collection: 'question',
-        via: 'chapitre',
-      },
     },
   };
   
