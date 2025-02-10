@@ -1,22 +1,23 @@
 module.exports = {
   attributes: {
     question: {
-      type: 'string',
+      type: "string",
       required: true,
     },
     answers: {
-      type: 'json',
+      type: "json",
       required: true,
     },
     correctIndices: {
-      type: 'json',
+      type: "json",
       required: true,
-      description: 'Indices des réponses correctes sous forme de tableau de nombres',
+      description:
+        "Indices des réponses correctes sous forme de tableau de nombres",
     },
     chapitre: {
-      model: 'chapitre',
+      model: "chapitre",
       required: true,
-      description: 'Le chapitre auquel la question appartient',
+      description: "Le chapitre auquel la question appartient",
     },
   },
 };
