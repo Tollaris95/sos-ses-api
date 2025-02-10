@@ -1,5 +1,10 @@
 module.exports = {
+  migrate: "safe",
   attributes: {
+    id: {
+      type: "string",
+      columnName: "_id",
+    },
     question: {
       type: "string",
       required: true,

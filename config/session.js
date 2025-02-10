@@ -19,6 +19,15 @@ module.exports.session = {
   *                                                                          *
   ***************************************************************************/
   secret: 'd54dcb5dc070ec612015b0e93ba026f9',
+  
+  adapter: 'connect-mongo',
+  url: 'mongodb://admin:pissenlit2025!@127.0.0.1:27017/sessions?authSource=admin',
+  collection: 'sessions',
+  auto_reconnect: true,
+
+  cookie: {
+    secure: true
+  }
 
 
   /***************************************************************************
