@@ -3,8 +3,12 @@ const MongoStore = require("connect-mongo");
 module.exports.session = {
   secret: process.env.SESSION_SECRET || "d54dcb5dc070ec612015b0e93ba026f9",
 
-  adapter: "connect-mongo",
-  store: new MongoStore({ // ✅ Ajout de `new` pour instancier correctement la classe
+  adapter: "mongo",
+  url: "mongodb://admin:pissenlit2025!@127.0.0.1:27017/sessions?authSource=admin",
+  collection: "sessions",
+  ttl: 14 * 24 * 60 * 60,
+
+  store: MongoStore.create({
     mongoUrl: "mongodb://admin:pissenlit2025!@127.0.0.1:27017/sessions?authSource=admin",
     collectionName: "sessions",
     ttl: 14 * 24 * 60 * 60,
