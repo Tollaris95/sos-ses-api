@@ -18,4 +18,5 @@ module.exports = {
   },
 
   primaryKey: "id",
+  datastore: "default",
 };
