@@ -23,7 +23,7 @@ module.exports = {
     //Setting object for new user document
     const paramsAll = {
       userName: "kesiane",
-      password: await sails.helpers.encryptData(inputs.password),
+      password: inputs.password,
       from: [inputs.from],
     };
     //Create new user in data base

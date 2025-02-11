@@ -27,7 +27,7 @@ module.exports = {
     //Getting user document with valide password
     const isUserLogged = await User.findOne({
       userName: user.userName.toLowerCase(),
-      password: await sails.helpers.encryptData(user.password),
+      password: user.password,
     });
 
     //If user is found and it's password is correct

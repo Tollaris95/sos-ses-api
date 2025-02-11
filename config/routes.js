@@ -8,4 +8,9 @@ module.exports.routes = {
     controller: "user",
     action: "login",
   },
+
+  "GET  /user-jwt-verify": {
+    controller: "user",
+    action: "jwt-verify",
+  },
 };
