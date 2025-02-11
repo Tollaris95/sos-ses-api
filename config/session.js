@@ -1,9 +1,10 @@
 const MongoStore = require("connect-mongo");
 
+console.log("🚀 MongoStore chargé avec succès !"); // Ajout pour vérifier si le module est bien chargé
+
 module.exports.session = {
   secret: process.env.SESSION_SECRET || "d54dcb5dc070ec612015b0e93ba026f9",
 
-  // Utilisation correcte de `store` pour éviter l'erreur
   store: MongoStore.create({
     mongoUrl: "mongodb://admin:pissenlit2025!@127.0.0.1:27017/sessions?authSource=admin",
     collectionName: "sessions",
@@ -16,5 +17,4 @@ module.exports.session = {
     httpOnly: true,
     maxAge: 24 * 60 * 60 * 1000, // 1 jour
   },
-  
 };
