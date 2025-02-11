@@ -16,7 +16,7 @@
 module.exports.datastores = {
   default: {
     adapter: 'sails-mongo',
-    url: 'mongodb://admin:pissenlit2025!@127.0.0.1:27017/nom_de_ta_base?authSource=admin',
+    url: 'mongodb://admin:pissenlit2025!@127.0.0.1:27017/sos-ses?authSource=admin',
   },
 };
 
