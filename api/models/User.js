@@ -1,14 +1,12 @@
 module.exports = {
   migrate: "safe",
+
   attributes: {
-    attributes: {
-      id: {
-        type: "string",
-        columnName: "_id",
-      },
+    id: {
+      type: "string",
+      columnName: "_id",
     },
-    primaryKey: "id",
-    username: {
+    userName: {
       type: "string",
       required: true,
       unique: true,
@@ -18,4 +16,6 @@ module.exports = {
       required: true,
     },
   },
+
+  primaryKey: "id",
 };
