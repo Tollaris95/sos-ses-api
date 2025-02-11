@@ -53,6 +53,9 @@ module.exports = {
       options
     );
 
+    const allUsers = await User.find();
+    console.log("📌 Liste des utilisateurs en base :", allUsers);
+
     if (newUser) {
       return env.res.status(200).json({
         text: "User created",
