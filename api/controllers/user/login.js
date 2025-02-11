@@ -26,7 +26,7 @@ module.exports = {
 
     //Getting user document with valide password
     const isUserLogged = await User.findOne({
-      userName: user.userName.toLowerCase(),
+      userName: user.userName,
       password: user.password,
     });
 
@@ -41,7 +41,7 @@ module.exports = {
       //Setting token
       const token = jwt.sign(
         {
-          userId: useruserName.userName,
+          userId: user.userName,
         },
         jwtSecret,
         options
