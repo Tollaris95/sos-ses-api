@@ -8,7 +8,7 @@
  * For all available options, see:
  * https://sailsjs.com/config/session
  */
-const MongoStore = require('connect-mongo');
+const MongoStore = require("connect-mongo");
 
 module.exports.session = {
   /***************************************************************************
@@ -25,11 +25,12 @@ module.exports.session = {
     mongoUrl:
       "mongodb://admin:pissenlit2025!@127.0.0.1:27017/sessions?authSource=admin",
     collectionName: "sessions",
-    autoRemove: "interval",
-    autoRemoveInterval: 10, // Nettoyage toutes les 10 minutes
+    ttl: 14 * 24 * 60 * 60, // 14 jours d'expiration
   }),
   cookie: {
-    secure: false, // Mets `true` si HTTPS est activé
+    secure: process.env.NODE_ENV === "production", // Sécurisé en production
+    httpOnly: true,
+    maxAge: 24 * 60 * 60 * 1000, // 1 jour
   },
 
   /***************************************************************************
