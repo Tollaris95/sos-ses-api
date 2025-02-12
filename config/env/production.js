@@ -252,7 +252,7 @@ module.exports = {
     ***************************************************************************/
     onlyAllowOrigins: [
       "http://localhost:3000",  // Pour le test local
-      "https://tondomaine.com"  // Remplace par ton domaine réel en production
+      "https://sos-ses.fr"  // Remplace par ton domaine réel en production
     ]
 
 
