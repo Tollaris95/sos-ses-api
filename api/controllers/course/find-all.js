@@ -7,7 +7,7 @@ module.exports = {
       try {
         // Récupération de tous les cours avec uniquement leur id et chapitre
         const courses = await Course.find({
-          select: ["id", "chapitre"],
+          select: ["id", "matier", "classe", "chapitre"],
         });
   
         // Retourner la liste des cours
