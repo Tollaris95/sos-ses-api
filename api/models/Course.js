@@ -20,7 +20,7 @@ module.exports = {
     },
     contenu: {
         type: "json",
-        required: true,
+        required: false,
       },
   },
 
