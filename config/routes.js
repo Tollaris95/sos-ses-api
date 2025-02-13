@@ -15,9 +15,15 @@ module.exports.routes = {
     action: "jwt-verify",
   },
 
-  //course 
+  //course
   "POST  /course-create": {
     controller: "course",
     action: "create",
+  },
+
+  //course
+  "PUT  /course-update": {
+    controller: "course",
+    action: "update",
   },
 };

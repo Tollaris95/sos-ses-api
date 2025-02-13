@@ -20,5 +20,6 @@ module.exports.policies = {
   "user/create": true,
   "user/login": true,
   "user/jwt-verify": true,
-  "course/create": true
+  "course/create": true,
+  "course/update": true
 };
