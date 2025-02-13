@@ -1,4 +1,5 @@
 module.exports.routes = {
+  //user
   "POST  /user-create": {
     controller: "user",
     action: "create",
@@ -12,5 +13,11 @@ module.exports.routes = {
   "GET  /user-jwt-verify": {
     controller: "user",
     action: "jwt-verify",
+  },
+
+  //course 
+  "POST  /course-create": {
+    controller: "course",
+    action: "create",
   },
 };
