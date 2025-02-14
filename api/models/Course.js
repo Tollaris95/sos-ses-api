@@ -20,6 +20,7 @@ module.exports = {
     },
     contenu: {
         type: "json",
+        columnType: 'json',
         required: false,
       },
   },
