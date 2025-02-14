@@ -21,6 +21,11 @@ module.exports.routes = {
     action: "create",
   },
 
+  "PUT  /course-update": {
+    controller: "course",
+    action: "update",
+  },
+
   "GET  /course-find-all": {
     controller: "course",
     action: "find-all",

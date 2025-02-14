@@ -21,5 +21,7 @@ module.exports.policies = {
   "user/login": true,
   "user/jwt-verify": true,
   "course/create": true,
-  "course/update": true
+  "course/update": true,
+  "course/find-all": true,
+  "course/finc-one": true
 };
