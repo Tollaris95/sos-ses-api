@@ -15,6 +15,7 @@ module.exports = {
     },
   
     fn: async function (inputs, exits, env) {
+      console.log("🚀 ~ inputs:", inputs)
       try {
         // Vérification de l'existence du cours
         const existingCourse = await Course.findOne({ id: inputs.id });
